@@ -1,0 +1,212 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+*{
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #ffc2c7;
+    height:  50px;
+    width: 100%;
+}
+body{
+    background-color: #fbe5c8;
+    height: 100%;
+    width: 100%;
+    position: block;
+}
+
+h1, h2{
+    background-color: #ffc2c7;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: initial;
+    padding: 15px;
+    display: block;
+}
+
+a{
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    font-size: 12px;
+    padding: 5px;
+    background-color: #cb9196;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+
+/*Classes*/
+
+.title{
+    position: relative;
+    display: block;
+}
+
+.noMargin{
+    margin: 0;
+}
+
+.noPadding{
+    padding: 0;
+}
+
+.list__navigator{
+    list-style-type: none;
+    right: -30px;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    li{
+        display: inline-flex;
+        a{
+            color:#000000;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 17px;
+            a:hover{
+                animation-name: heartbeat;
+                animation-duration: 3s;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.navigator--color{
+    background-color: #ffc2c7;
+    color: #67595E;
+}
+
+.homeMain{
+    display: inline-flex;
+    
+}
+
+.img--bordes25{
+    border-radius: 25%;
+}
+
+
+.list--noIcon{
+    list-style-type: none;
+}
+
+.itemScroll{
+    grid-area: scroll;
+}
+
+@for $prods from 1 through 6{
+    .itemProd#{$prods}{
+        grid-area: prod#{$prods};
+    }
+}
+
+.rotate20{
+    transform: rotate(20deg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.productsGrid{
+    display: grid;
+    width: 100%;
+    height: 600px;
+    padding: 20px 15px 15px 15px;
+    grid-gap: 0px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "scroll prod1 prod2 prod3"
+     "scroll prod4 prod5 prod6";
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-flow: wrap;
+    padding: 15px;
+}
+
+.flexStart{
+    justify-content: start;
+}
+
+.itemFlexCart{
+    flex-basis: 100%;
+}
+
+.cart{
+    justify-content: start;
+    flex-flow: unset;
+}
+
+.cart--text{
+    font-size: 14px;
+}
+
+.itemFlex{
+    margin: 0px 10px 15px 10px;
+}
+
+@media (min-width: map-get($map: $container-max-widths, $key: md)) {
+    .title{
+        position: absolute;
+        top: 0;
+        right: 4.2em;
+        padding: 0;
+    }
+}
+
+@media (min-width: map-get($map: $container-max-widths, $key: xxl)) {
+    .title{
+        position: absolute;
+        top: 0;
+        right: 14em;
+        padding: 0;
+    }
+}
+
+@keyframes heartbeat
+{
+  0%{
+    transform: scale( .75 );
+  }
+  20%{
+    transform: scale( 1 );
+  }
+  40%{
+    transform: scale( .75 );
+  }
+  60%{
+    transform: scale( 1 );
+  }
+  80%{
+    transform: scale( .75 );
+  }
+  100%{
+    transform: scale( .75 );
+  }
+}
