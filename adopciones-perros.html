@@ -7,6 +7,10 @@
         </title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&&display=swap" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.js"></script>
@@ -46,41 +50,51 @@
           </nav>
     </header>
     <h1 class= "title">Perros</h1>
-    <section class = "container">
-        <article class = "row row-cols-1 row-cols-lg-2 justify-content-center align-items-end">
-            <div class="col">
-                <div class= "row">
-                    <!-- Foto -->
-                    <img class="img--bordes25" src="https://aws.traveler.es/prod/designs/v1/assets/745x628/202931.jpg" width="600" height="600">
-                </div>
-                <div class= "row">
-                    <!-- Descripcion -->
-                    <p>
-                        Blackie
-                        Mimoso, blablablalbal
-                        blablablalbal
-                        8 meses.
-                    </p>
-                </div>
+    <article class="pt-0 m-2 m-md-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-perro-bichonMaltes.jpg" alt="Bichon Maltés">
+                <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                    <span class = "fw-bold d-block">Nombre: </span> Blanqui
+                    <span class = "fw-bold d-block">Edad: </span> 3 meses
+                    <span class = "fw-bold d-block">Raza: </span> Bichon Maltés
+                    <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                    <span class = "fw-bold d-block">Descripción: </span> Blanqui es un perro muy cariñoso que disfruta muchisimo de la compañia, perfecto para una familia que nunca lo deje solo
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-perro-husky.jpg" alt="Husky">
+                <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                    <span class = "fw-bold d-block">Nombre: </span> Molly
+                    <span class = "fw-bold d-block">Edad: </span> 6 meses
+                    <span class = "fw-bold d-block">Raza: </span> Husky
+                    <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                    <span class = "fw-bold d-block">Descripción: </span> El perro mas jugueton que jamas ha sido visto, perfecto para acompañar familias con niños y alegrar la vida de todos.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-perro-pastorAleman.jpg" alt="Pastor Aleman">
+                <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                    <span class = "fw-bold d-block">Nombre: </span> Churri
+                    <span class = "fw-bold d-block">Edad: </span> 4 meses
+                    <span class = "fw-bold d-block">Raza: </span> Pastor Alemán
+                    <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                    <span class = "fw-bold d-block">Descripción: </span> Churri es un perro muy cariñoso pero a la vez guardian, si te considera su amo, te tratará de proteger a toda costa
+                </p>
+              </div>
             </div>
-            <div class="col">
-                <div class= "row">
-                    <!-- Foto -->
-                    <img class="img--bordes25" src="https://www.consumer.es/wp-content/uploads/2018/04/perro-comida-natural.jpg" width="600" height="600">
-                </div>
-                <div class= "row">
-                    <!-- Descripcion -->
-                    <p>
-                        Surri
-                        Mimoso, blablablalbal
-                        blablablalbal
-                        4 meses.
-                    </p>
-                </div>
-            </div>
-        </article>
-    </section>
-    <footer class="footer">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </article>
+    <footer class="footer text-center">
         Copyright@ Ningun multimedia usado es para fines comerciales
     </footer>
 </body>

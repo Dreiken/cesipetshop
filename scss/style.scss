@@ -21,21 +21,25 @@ body{
     background-color: #fbe5c8;
     height: 100%;
     width: 100%;
-    position: block;
+}
+
+span{
+    font-family: 'Caveat', cursive;
 }
 
 h1, h2{
     background-color: #ffc2c7;
     text-align: center;
+    padding: 15px;
+    padding-top: 15px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    font-family: 'Caveat';
+    font-weight: bolder;
 }
 
 p{
-    font-family: 'Poppins', sans-serif;
-    text-align: initial;
-    padding: 15px;
-    display: block;
+    font-family: 'Caveat', cursive;
+    text-align: center;
 }
 
 a{
@@ -51,7 +55,6 @@ footer{
     font-size: 12px;
     padding: 5px;
     background-color: #cb9196;
-    position: fixed;
     width: 100%;
     height: 40px;
     bottom: 0;
@@ -62,6 +65,7 @@ footer{
 .title{
     position: relative;
     display: block;
+    font-size: xx-large
 }
 
 .noMargin{
@@ -99,9 +103,8 @@ footer{
     color: #67595E;
 }
 
-.homeMain{
-    display: inline-flex;
-    
+.puppyMain{
+    overflow: hidden;
 }
 
 .img--bordes25{
@@ -115,6 +118,10 @@ footer{
 
 .itemScroll{
     grid-area: scroll;
+}
+
+.background-dark{
+    background-color: #ffc2c7;
 }
 
 @for $prods from 1 through 6{
@@ -171,12 +178,26 @@ footer{
     margin: 0px 10px 15px 10px;
 }
 
+.text-big{
+    font-size: 25px;
+}
+
+.paddinglr-high{
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
 @media (min-width: map-get($map: $container-max-widths, $key: md)) {
     .title{
         position: absolute;
         top: 0;
         right: 4.2em;
         padding: 0;
+        
+    }
+    
+    .puppyMain{
+        max-height: 700px;
     }
 }
 
@@ -186,6 +207,22 @@ footer{
         top: 0;
         right: 14em;
         padding: 0;
+    }
+}
+
+@media (max-width: map-get($map: $container-max-widths, $key: md)) {
+
+    .text-big{
+        font-size: 22px;
+    }
+
+    .paddinglr-high{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title{
+        margin: 0px;
     }
 }
 

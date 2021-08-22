@@ -7,6 +7,10 @@
         </title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&&display=swap" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.js"></script>
@@ -46,41 +50,48 @@
       </nav>
     </header>
     <h1 class= "title">Gatos</h1>
-    <section class = "container">
-      <article class = "row row-cols-1 row-cols-lg-2 justify-content-center align-items-end">
-          <div class="col">
-              <div class= "row">
-                  <!-- Foto -->
-                  <img class="img--bordes25" src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg" width="600" height="600">
-              </div>
-              <div class= "row">
-                  <!-- Descripcion -->
-                  <p>
-                      Cutie
-                      Mimoso, blablablalbal
-                      blablablalbal
-                      5 meses.
-                  </p>
-              </div>
+    <article class="pt-0 m-2 m-md-5">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-cat-bochi.jpg" alt="Bochi">
+              <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                  <span class = "fw-bold d-block">Nombre: </span> Bochi
+                  <span class = "fw-bold d-block">Edad: </span> 5 meses
+                  <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                  <span class = "fw-bold d-block">Descripción: </span> Bochi es un gato muy cariñoso, siempre buscando estar encima de uno, perfecto para familias con siempre alguien en la casa.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-cat-hannah.jpg" alt="Hannah">
+              <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                  <span class = "fw-bold d-block">Nombre: </span> Hannah
+                  <span class = "fw-bold d-block">Edad: </span> 8 meses
+                  <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                  <span class = "fw-bold d-block">Descripción: </span> Hannah es una gata muy juguetona, si te dispones en darle suficientes juguetes y un espacio para vivir muy amplio, ella sera la gata mas feliz del mundo.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img class="d-flex w-100 px-0 mx-0" src="img/adopcion-cat-suri.jpg" alt="Suri">
+              <p class = "text-center text-big pt-4 m-4 p-3 background-dark img--bordes25">
+                  <span class = "fw-bold d-block">Nombre: </span> Suri
+                  <span class = "fw-bold d-block">Edad: </span> 5 meses
+                  <span class = "fw-bold d-block">Vacunas: </span> Todas las obligatorias
+                  <span class = "fw-bold d-block">Descripción: </span> Suri es una gata muy timida, la cual le cuesta relacionarse, pero una vez que se encariñe con vos, no podras sacartela de encima.
+              </p>
+            </div>
           </div>
-          <div class="col">
-              <div class= "row">
-                  <!-- Foto -->
-                  <img class="img--bordes25" src="https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNDk0OTAwfHxlbnwwfHx8fA%3D%3D&w=1000&q=80g" width="600" height="600">
-              </div>
-              <div class= "row">
-                  <!-- Descripcion -->
-                  <p>
-                      Mumi
-                      Mimoso, blablablalbal
-                      blablablalbal
-                      1 año.
-                  </p>
-              </div>
-          </div>
-      </article>
-    </section>
-    <footer class="footer">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </article>
+    <footer class="footer text-center">
         Copyright@ Ningun multimedia usado es para fines comerciales
     </footer>
 </body>
